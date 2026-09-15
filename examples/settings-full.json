@@ -1,0 +1,27 @@
+{
+  "_comment": "TDD Batch Runner v3 — G0 anti-tamper kapisinin ucuz kopyasi. G0 ihlali SONRADAN yakalar; deny kurali EN BASTAN engeller. Edit(./.claude/**) yerine agents/ ve skills/ hedeflenir: settings dosyalarini kilitlemek insan oturumunu da kilitliyordu. G0 zaten butun .claude/ agacini repo disindaki salt-okunur kopyadan korur. Deny, settings.local.json icindeki allow kurallarina gore onceliklidir.",
+  "permissions": {
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(npm publish:*)",
+      "Bash(git push:*)",
+      "Bash(rm -rf /*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*secret*)",
+      "Edit(./runner/verify.sh)",
+      "Edit(./runner/contract.sh)",
+      "Edit(./runner/graph.sh)",
+      "Edit(./runner/journal.sh)",
+      "Edit(./runner/preflight.sh)",
+      "Edit(./runner/final-gate.sh)",
+      "Edit(./runner/lib.sh)",
+      "Edit(./runner/status.sh)",
+      "Edit(./runner/config.sh)",
+      "Edit(./run-issues.sh)",
+      "Edit(./.claude/agents/**)",
+      "Edit(./.claude/skills/**)"
+    ]
+  }
+}

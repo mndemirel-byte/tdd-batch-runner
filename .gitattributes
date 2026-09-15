@@ -1,0 +1,5 @@
+# Kabuk script'leri LF olmak ZORUNDA: CRLF shebang'i bozar ve
+# "bad interpreter" hatasiyla calismazlar (run-issues.sh, runner/*.sh,
+# install.sh). Bu paketin tamami metin oldugu icin genel kural da LF.
+* text=auto eol=lf
+*.sh text eol=lf

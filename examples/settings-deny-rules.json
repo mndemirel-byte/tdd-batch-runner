@@ -1,0 +1,17 @@
+{
+  "_comment": ".claude/settings.json — G0 anti-tamper kapisinin ucuz kopyasi. G0 ihlali SONRADAN yakalar; deny kurali EN BASTAN engeller. Ikisi birlikte kullanilir: bu dosya .claude/ icinde durdugu icin ajan tarafindan degistirilebilir, G0 ise repo disindaki salt-okunur kopyadan calisir.",
+  "permissions": {
+    "deny": [
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(npm publish:*)",
+      "Bash(git push:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*secret*)",
+      "Edit(./runner/**)",
+      "Edit(./.claude/**)",
+      "Edit(./run-issues.sh)"
+    ]
+  }
+}

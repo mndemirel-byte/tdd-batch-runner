@@ -1,0 +1,4 @@
+# Bu paketin kendi kosu ciktisi (test kurulumu yapilirsa olusur)
+.tdd-state/
+.tdd-state-*/
+.tdd-worktrees/

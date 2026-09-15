@@ -1,0 +1,33 @@
+{
+  "_comment": "Yerel izinler. TDD Batch Runner kurulumunda genis joker kurallar kaldirildi (curl *, git push *, npm run *, taskkill *, node:*, node -e:*, python3 -c, gh repo *, git ls-remote *, git stash *, npm uninstall *, rm -rf node_modules/*, start *, cmd /c, pkill) ve olu/bozuk girdiler temizlendi. Dogrulama komutlari acikca listelendi: PERMISSION_MODE=acceptEdits Bash'i yine sorar, headless kosuda soru = izin reddi = sinif A hatasi. Deny kurallari .claude/settings.json icinde ve buradaki allow'lara gore onceliklidir.",
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run build:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(npm run validate-content:*)",
+      "Bash(npm run validate-curriculum:*)",
+      "Bash(npm run content-status:*)",
+      "Bash(npm install:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm ls:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npx vitest run:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npx prisma validate:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(echo:*)",
+      "Bash(claude --version:*)",
+      "Bash(tasklist)",
+      "Bash(netstat -ano)",
+      "Read(//tmp/**)",
+      "Skill(run)",
+      "Skill(implement-all)",
+      "Skill(tdd)"
+    ]
+  }
+}
